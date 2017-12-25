@@ -1,0 +1,44 @@
+
+div:focus {
+	
+}
+
+
+.dirty {
+	background-color: #fff8f8;
+}
+.unicodeBtn {
+    margin: .2em;
+    padding: .4em;
+    border: 1px solid grey;
+    background: whitesmoke;
+    font-size: 1.5em;
+}
+
+#unicodeBtnContainer {
+	width: 80%;
+    margin: auto;
+}
+
+#textarea {
+	margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    width: 80%;
+    border: 1px solid cornflowerblue;
+    font-size: 2em;
+}
+#hexarea {
+	height: 10rem;
+	width: 80%;
+    margin: auto;
+    border: 1px solid cornflowerblue;
+}
+
+
+
+div > span{
+    color : red;
+}
