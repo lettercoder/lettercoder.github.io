@@ -8,6 +8,7 @@ var textelem = document.getElementById("textarea");
 var textCursorPosition = 0;
 
 var hexelem = document.getElementById("hexarea");
+var undoLog =[];
 
 
 function hexunicodeFromCharCode(code) {
@@ -97,7 +98,11 @@ var calcHex = function() {
 	hexelem.innerHTML=outhex;
 };
 
-var textChanged = function() {
+var textChanged = function(dontUndoSave) {
+	if (typeof dontUndoSave!="undefined" && !(dontUndoSave===true)) {
+		console.log("saving...");
+		saveForUndo();
+	}
 	textCursorPosition = getCaretCharacterOffsetWithin(textelem);
 	calcHex();
 };
@@ -149,7 +154,7 @@ var hexChanged = function() {
 		newText += String.fromCharCode(parseInt(hexChars[i],16));
 	}
 	textelem.innerText = newText;
-	
+	saveForUndo();
 };
 
 textelem.addEventListener('keyup',textChanged,false);
@@ -166,6 +171,7 @@ var unicodeButtonPressed = function(event) {
 	textelem.innerText = newtext;
 	textCursorPosition++;
 	calcHex();
+	saveForUndo();
 };
 
 var makeButtons = function() {
@@ -191,7 +197,25 @@ var makeButtons = function() {
 	for (var i=0;i<buttons.length;i++){
 		buttons[i].addEventListener('click',unicodeButtonPressed,false);
 	}
+
 }
 
+var saveForUndo = function() {
+	undoLog.push( { text: textelem.innerText } );
+};
+
+
+var undo = function() {
+	if (undoLog.length>0){
+		textelem.innerText = undoLog.pop().text;
+		textChanged();
+	} else {
+		//document.getElementById('undoBtn').setAttribute('disabled','true');
+	}
+
+
+};
+
+document.getElementById('undoBtn').addEventListener('click',undo,false);
 
 makeButtons();
