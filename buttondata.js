@@ -30,6 +30,9 @@ var rockets = [
                { code: '0360', angle: 0, btn: true, name: 'COMBINING DOUBLE TILDE', group: 'combinig' },
                { code: '20EB', angle: 0, btn: true, name: 'COMBINING LONG DOUBLE SOLIDUS OVERLAY', group: 'combinig' },
                { code: '20DC', angle: 0, btn: true, name: 'COMBINING FOUR DOTS ABOVE', group: 'combinig' },
+               { code: '0338', angle: 0, btn: true, name: 'COMBINING LONG SOLIDUS OVERLAY', group: 'combinig' },
+               { code: '0321', angle: 0, btn: true, name: 'COMBINING PALATALIZED HOOK BELOW', group: 'combinig' },
+               { code: '0349', angle: 0, btn: true, name: 'COMBINING LEFT ANGLE BELOW', group: 'combinig' },
 
                { code: '0363', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER A', group: 'smallletter' },
                { code: '0368', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER C', group: 'smallletter' },
@@ -70,7 +73,10 @@ var rockets = [
                { code: '02B8', angle: 0, btn: true, name: 'MODIFIER LETTER SMALL Y', group: 'modifierletter' },
                { code: '1DBB', angle: 0, btn: true, name: 'MODIFIER LETTER SMALL Z', group: 'modifierletter' },
 
-               { code: 'FC60', angle: 355, btn: true, name: 'ARABIC LIGATURE SHADDA WITH FATHA ISOLATED FORM', group: 'arabic' },
+               { code: '25EF', angle: 0, btn: true, name: 'LARGE CIRCLE', group: 'geo' },
+               { code: '25B3', angle: 0, btn: true, name: 'WHITE UP-POINTING TRIANGLE', group: 'geo' },
+
+               { code: 'FC60', angle: 355, btn: true, name: 'ARABIC LIGATURE SHADDA WITH FATHA ISOLATED FORM', group: 'arabic' }
 
 ];
 
