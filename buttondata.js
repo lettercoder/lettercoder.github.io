@@ -31,9 +31,19 @@ var rockets = [
                { code: '20EB', angle: 0, btn: true, name: 'COMBINING LONG DOUBLE SOLIDUS OVERLAY', group: 'combinig' },
                { code: '20DC', angle: 0, btn: true, name: 'COMBINING FOUR DOTS ABOVE', group: 'combinig' },
 
-               { code: '0366', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER O', group: 'smallletter' },
+               { code: '0363', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER A', group: 'smallletter' },
+               { code: '0368', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER C', group: 'smallletter' },
                { code: '0369', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER D', group: 'smallletter' },
+               { code: '0364', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER E', group: 'smallletter' },
+               { code: '036A', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER H', group: 'smallletter' },
+               { code: '0365', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER I', group: 'smallletter' },
                { code: '036B', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER M', group: 'smallletter' },
+               { code: '0366', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER O', group: 'smallletter' },
+               { code: '036C', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER R', group: 'smallletter' },
+               { code: '036D', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER T', group: 'smallletter' },
+               { code: '0367', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER U', group: 'smallletter' },
+               { code: '036E', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER V', group: 'smallletter' },
+               { code: '036F', angle: 0, btn: true, name: 'COMBINING LATIN SMALL LETTER X', group: 'smallletter' },
 
                { code: '1D43', angle: 0, btn: true, name: 'MODIFIER LETTER SMALL A', group: 'modifierletter' },
                { code: '1D47', angle: 0, btn: true, name: 'MODIFIER LETTER SMALL B', group: 'modifierletter' },
@@ -61,7 +71,6 @@ var rockets = [
                { code: '1DBB', angle: 0, btn: true, name: 'MODIFIER LETTER SMALL Z', group: 'modifierletter' },
 
                { code: 'FC60', angle: 355, btn: true, name: 'ARABIC LIGATURE SHADDA WITH FATHA ISOLATED FORM', group: 'arabic' },
-               { code: 'FC60', angle: 0, btn: true, name: 'ARABIC LIGATURE SHADDA WITH FATHA ISOLATED FORM', group: 'arabic' }
 
 ];
 
