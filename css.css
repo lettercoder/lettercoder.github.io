@@ -25,16 +25,27 @@ div:focus {
     margin-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
-    height: 3rem;
     width: 80%;
     border: 1px solid cornflowerblue;
     font-size: 2em;
+
+    display: block;
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px solid red;
+    overflow: hidden;
+    
 }
 #hexarea {
-	height: 10rem;
+//	height: 10rem;
 	width: 80%;
     margin: auto;
     border: 1px solid cornflowerblue;
+    
+    display: block;
+    min-height: 30px;
+    border: 1px solid red;
+    overflow: hidden;
 }
 
 
