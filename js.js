@@ -157,11 +157,11 @@ textelem.addEventListener('mouseup',textChanged,false);
 hexelem.addEventListener('keyup',hexChanged,false);
 
 var unicodeButtonPressed = function(event) {
-	var el = event.srcElement;
+	var el = event.srcElement || event.target;
 	btn = el;
 	var text = textelem.innerText;
 	var insert = btn.innerText;
-	if (buttonDemoCharacter!=null) insert = insert.slice(1);
+	if (buttonDemoCharacter!=null) {insert = insert.slice(1);}
 	var newtext = text.slice(0,textCursorPosition)+insert+text.slice(textCursorPosition);
 	textelem.innerText = newtext;
 	textCursorPosition++;
